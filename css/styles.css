@@ -119,7 +119,7 @@ ul{
 
 /* estilos de footer */
 
-footer h3{
+footer h4{
     text-align: center;
 }
 
@@ -147,10 +147,14 @@ footer ul li img{
 
 
 /* tipos de rutina*/
-#tiposderutina{
-    text-align: center;
-    
-}
+.contenedor{
+    display: flex;
+    }
+
+    .centrarimagenytexto{
+        justify-content: center;
+    }
+
 
 
 
@@ -184,5 +188,39 @@ nav div{
 }
 
 
-/* diseño responsive */
 
+
+
+
+
+
+
+
+
+
+/* reset */
+/*
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+// importando archivos secundarios 
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+@import "contenedores/header";
+
+section{
+    @extend %estilosSection;
+    color: red;
+}
+
+.section-dos{
+    @extend %estilosSection; 
+    color: red($color: yellow);
+}
+
+*/
